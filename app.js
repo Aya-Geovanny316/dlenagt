@@ -318,6 +318,38 @@ function setupRevealAnimations() {
   document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
 }
 
+function setupMobileMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("siteNav");
+  const actions = document.querySelector(".topbar-actions");
+
+  function setOpen(open) {
+    nav.classList.toggle("is-open", open);
+    actions.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  toggle.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    setOpen(open);
+  });
+
+  [...nav.querySelectorAll("a"), ...actions.querySelectorAll("a, button")].forEach((element) => {
+    element.addEventListener("click", () => {
+      if (window.innerWidth <= 980) {
+        setOpen(false);
+      }
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) {
+      setOpen(false);
+    }
+  });
+}
+
 renderContent();
 setupAdmin();
 setupRevealAnimations();
+setupMobileMenu();
