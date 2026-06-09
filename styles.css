@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
     radial-gradient(circle at top, rgba(201, 163, 91, 0.16), transparent 30%),
     linear-gradient(180deg, #081510 0%, #07140f 30%, #0a1a13 100%);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -54,6 +56,10 @@ textarea {
   width: min(1200px, calc(100% - 40px));
   margin: 0 auto;
   padding-bottom: 60px;
+}
+
+main {
+  overflow: hidden;
 }
 
 .topbar {
@@ -189,7 +195,7 @@ textarea {
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 40px;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100dvh - 140px);
 }
 
 .eyebrow {
@@ -763,6 +769,7 @@ textarea {
 @media (max-width: 640px) {
   .site-shell {
     width: min(100% - 24px, 1200px);
+    padding-bottom: 20px;
   }
 
   .topbar,
@@ -849,5 +856,9 @@ textarea {
   .admin-category-top {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .section {
+    margin-top: 28px;
   }
 }
