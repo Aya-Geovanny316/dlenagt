@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D'Leña | Cocina de Autor</title>
+  <title>D'Lena | Cocina de Autor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,23 +15,20 @@
       <a class="brand" href="#inicio">
         <span class="brand-mark">DL</span>
         <span>
-          <strong>D'Leña</strong>
+          <strong>D'Lena</strong>
           <small>Cocina de autor</small>
         </span>
       </a>
-
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteNav">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
         <span></span>
         <span></span>
         <span></span>
       </button>
-
       <nav class="nav" id="siteNav">
         <a href="#inicio">Inicio</a>
-        <a href="#menu">Menú</a>
-        <a href="#informacion">Información</a>
+        <a href="#menu">Menu</a>
+        <a href="#informacion">Informacion</a>
       </nav>
-
       <div class="topbar-actions">
         <a class="button button-ghost" href="#reservas">Reservar</a>
         <button class="button button-gold" id="openAdmin" type="button">Administrador</button>
@@ -45,20 +42,18 @@
           <h1 id="heroTitle"></h1>
           <p class="hero-text" id="heroText"></p>
           <div class="hero-actions">
-            <a class="button button-gold" href="#menu">Explorar menú</a>
+            <a class="button button-gold" href="#menu">Explorar menu</a>
             <a class="button button-ghost" href="#informacion">Nuestra historia</a>
           </div>
-
           <ul class="hero-notes">
             <li id="heroNoteOne"></li>
             <li id="heroNoteTwo"></li>
             <li id="heroNoteThree"></li>
           </ul>
         </div>
-
         <div class="hero-visual">
           <div class="hero-card floating-card">
-            <span class="card-kicker">Selección del chef</span>
+            <span class="card-kicker">Seleccion del chef</span>
             <strong id="featuredDishName"></strong>
             <p id="featuredDishText"></p>
           </div>
@@ -69,27 +64,26 @@
         <article class="experience-card">
           <span>01</span>
           <h3>Ambiente ceremonial</h3>
-          <p>Iluminación íntima, materiales nobles y una puesta en escena sobria con acentos dorados.</p>
+          <p>Iluminacion intima, materiales nobles y una puesta en escena sobria con acentos dorados.</p>
         </article>
         <article class="experience-card">
           <span>02</span>
           <h3>Cocina precisa</h3>
-          <p>Ingredientes frescos, técnica contemporánea y una presentación diseñada para impresionar.</p>
+          <p>Ingredientes frescos, tecnica contemporanea y una presentacion disenada para impresionar.</p>
         </article>
         <article class="experience-card">
           <span>03</span>
           <h3>Detalle absoluto</h3>
-          <p>La experiencia completa está pensada para transmitir exclusividad desde la llegada hasta el postre.</p>
+          <p>La experiencia completa esta pensada para transmitir exclusividad desde la llegada hasta el postre.</p>
         </article>
       </section>
 
       <section class="section menu-section reveal" id="menu">
         <div class="section-heading">
-          <p class="eyebrow">Menú de autor</p>
+          <p class="eyebrow">Menu de autor</p>
           <h2 id="menuTitle"></h2>
           <p id="menuIntro"></p>
         </div>
-
         <div class="menu-layout">
           <aside class="menu-summary glass-panel">
             <h3>Firma de la casa</h3>
@@ -105,17 +99,16 @@
           <div class="story-image" id="aboutImage"></div>
         </div>
         <div class="story-copy">
-          <p class="eyebrow">Información</p>
+          <p class="eyebrow">Informacion</p>
           <h2 id="aboutTitle"></h2>
           <p id="aboutText"></p>
-
           <div class="info-grid">
             <article>
               <span>Horario</span>
               <strong id="hoursText"></strong>
             </article>
             <article>
-              <span>Ubicación</span>
+              <span>Ubicacion</span>
               <strong id="locationText"></strong>
             </article>
             <article id="reservas">
@@ -136,52 +129,63 @@
           <p class="eyebrow">Panel de control</p>
           <h2>Administrador</h2>
         </div>
-        <button class="icon-button" id="closeAdminButton" type="button" aria-label="Cerrar panel">×</button>
+        <button class="icon-button" id="closeAdminButton" type="button" aria-label="Cerrar panel">&times;</button>
       </div>
-
       <form id="adminForm" class="admin-form">
         <section class="admin-group">
           <h3>Inicio</h3>
           <label>Etiqueta superior <input name="heroEyebrow" type="text"></label>
-          <label>Título principal <textarea name="heroTitle" rows="2"></textarea></label>
+          <label>Titulo principal <textarea name="heroTitle" rows="2"></textarea></label>
           <label>Texto principal <textarea name="heroText" rows="4"></textarea></label>
           <label>Nota 1 <input name="heroNoteOne" type="text"></label>
           <label>Nota 2 <input name="heroNoteTwo" type="text"></label>
           <label>Nota 3 <input name="heroNoteThree" type="text"></label>
           <label>Plato destacado <input name="featuredDishName" type="text"></label>
-          <label>Descripción destacada <textarea name="featuredDishText" rows="3"></textarea></label>
+          <label>Descripcion destacada <textarea name="featuredDishText" rows="3"></textarea></label>
           <label>Imagen de portada (URL) <input name="heroImage" type="url"></label>
         </section>
-
         <section class="admin-group">
-          <h3>Menú</h3>
-          <label>Título del menú <input name="menuTitle" type="text"></label>
-          <label>Introducción del menú <textarea name="menuIntro" rows="3"></textarea></label>
+          <h3>Menu</h3>
+          <label>Titulo del menu <input name="menuTitle" type="text"></label>
+          <label>Introduccion del menu <textarea name="menuIntro" rows="3"></textarea></label>
           <label>Resumen lateral <textarea name="menuSummary" rows="4"></textarea></label>
           <div class="menu-admin-editor">
             <div class="menu-admin-toolbar">
-              <strong>Categorías y platillos</strong>
-              <button class="button button-ghost" id="addCategory" type="button">Agregar categoría</button>
+              <strong>Categorias y platillos</strong>
+              <button class="button button-ghost" id="addCategory" type="button">Agregar categoria</button>
             </div>
             <div id="adminMenuEditor" class="admin-menu-editor-list"></div>
           </div>
         </section>
-
         <section class="admin-group">
-          <h3>Información</h3>
-          <label>Título sección <input name="aboutTitle" type="text"></label>
-          <label>Descripción <textarea name="aboutText" rows="4"></textarea></label>
+          <h3>Informacion</h3>
+          <label>Titulo seccion <input name="aboutTitle" type="text"></label>
+          <label>Descripcion <textarea name="aboutText" rows="4"></textarea></label>
           <label>Imagen interior (URL) <input name="aboutImage" type="url"></label>
           <label>Horario <input name="hoursText" type="text"></label>
-          <label>Ubicación <input name="locationText" type="text"></label>
+          <label>Ubicacion <input name="locationText" type="text"></label>
           <label>Reservas <input name="reservationText" type="text"></label>
         </section>
-
         <div class="admin-actions">
           <button class="button button-ghost" id="resetData" type="button">Restablecer</button>
           <button class="button button-gold" type="submit">Guardar cambios</button>
         </div>
       </form>
+    </aside>
+  </div>
+
+  <div class="dish-modal" id="dishModal" aria-hidden="true">
+    <div class="dish-backdrop" id="closeDishModal"></div>
+    <aside class="dish-panel">
+      <button class="icon-button dish-close" id="closeDishModalButton" type="button" aria-label="Cerrar detalle">&times;</button>
+      <div class="dish-modal-image" id="dishModalImage"></div>
+      <div class="dish-modal-copy">
+        <p class="eyebrow" id="dishModalCategory"></p>
+        <h3 id="dishModalName"></h3>
+        <strong id="dishModalPrice"></strong>
+        <p id="dishModalDescription"></p>
+        <p class="dish-modal-detail" id="dishModalDetail"></p>
+      </div>
     </aside>
   </div>
 
@@ -196,13 +200,13 @@
   </template>
 
   <template id="menuItemTemplate">
-    <article class="menu-item">
+    <button class="menu-item" type="button">
       <div>
         <h4 class="item-name"></h4>
         <p class="item-description"></p>
       </div>
       <span class="item-price"></span>
-    </article>
+    </button>
   </template>
 
   <template id="adminCategoryTemplate">
@@ -210,9 +214,9 @@
       <div class="admin-category-top">
         <div class="admin-inline-fields">
           <label>Etiqueta <input class="admin-category-name" type="text"></label>
-          <label>Título <input class="admin-category-title" type="text"></label>
+          <label>Titulo <input class="admin-category-title" type="text"></label>
         </div>
-        <button class="icon-button admin-remove-category" type="button" aria-label="Eliminar categoría">×</button>
+        <button class="icon-button admin-remove-category" type="button" aria-label="Eliminar categoria">&times;</button>
       </div>
       <div class="admin-dishes-list"></div>
       <button class="button button-ghost admin-add-dish" type="button">Agregar platillo</button>
@@ -225,7 +229,9 @@
         <label>Nombre <input class="admin-dish-name" type="text"></label>
         <label>Precio <input class="admin-dish-price" type="text"></label>
       </div>
-      <label>Descripción <textarea class="admin-dish-description" rows="3"></textarea></label>
+      <label>Descripcion corta <textarea class="admin-dish-description" rows="3"></textarea></label>
+      <label>Detalle ampliado <textarea class="admin-dish-detail" rows="4"></textarea></label>
+      <label>Imagen del platillo (URL) <input class="admin-dish-image" type="url"></label>
       <button class="button button-ghost admin-remove-dish" type="button">Eliminar platillo</button>
     </article>
   </template>
@@ -233,3 +239,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+

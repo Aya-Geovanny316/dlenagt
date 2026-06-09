@@ -1,18 +1,18 @@
 const STORAGE_KEY = "dlena-demo-content";
 
 const defaultContent = {
-  heroEyebrow: "Alta cocina contemporánea",
-  heroTitle: "Una experiencia íntima, verde y dorada.",
-  heroText: "D'Leña es una demo conceptual de restaurante premium: atmósfera sobria, cocina de autor y una dirección visual pensada para transmitir lujo silencioso.",
+  heroEyebrow: "Alta cocina contemporanea",
+  heroTitle: "Una experiencia intima, verde y dorada.",
+  heroText: "D'Lena es una demo conceptual de restaurante premium: atmosfera sobria, cocina de autor y una direccion visual pensada para transmitir lujo silencioso.",
   heroNoteOne: "Cenas privadas con maridaje curado por sommeliers.",
-  heroNoteTwo: "Menú estacional con ingredientes frescos de origen selecto.",
+  heroNoteTwo: "Menu estacional con ingredientes frescos de origen selecto.",
   heroNoteThree: "Servicio elegante con detalle editorial en cada mesa.",
-  featuredDishName: "Lomo verde aureo",
-  featuredDishText: "Reducción intensa, hojas tostadas y acabado de oro culinario sobre un corte en su punto.",
+  featuredDishName: "Lomo D'Lena",
+  featuredDishText: "Reduccion intensa, hojas tostadas y acabado de oro culinario sobre un corte en su punto.",
   heroImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-  menuTitle: "Menú degustación y selección signature",
+  menuTitle: "Menu degustacion y seleccion signature",
   menuIntro: "Una carta construida para una noche de ritmo pausado, platos precisos y contrastes elegantes entre frescura herbal y profundidad tostada.",
-  menuSummary: "Cada categoría se presenta como una escena distinta: entradas ligeras, principales con estructura y postres diseñados para cerrar con textura, perfume y brillo.",
+  menuSummary: "Cada categoria se presenta como una escena distinta: entradas ligeras, principales con estructura y postres disenados para cerrar con textura, perfume y brillo.",
   menuItems: [
     {
       categoryName: "Entradas",
@@ -20,12 +20,16 @@ const defaultContent = {
       items: [
         {
           name: "Ostra imperial",
-          description: "Ostra fresca, granita de pepino y aceite de albahaca con nota cítrica.",
+          description: "Ostra fresca, granita de pepino y aceite de albahaca con nota citrica.",
+          detail: "Servida sobre piedra fria con perfil marino limpio, matiz herbal y una presentacion elegante pensada para abrir la experiencia con frescura y precision.",
+          image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
           price: "$18"
         },
         {
-          name: "Tártaro esmeralda",
-          description: "Res curada, mostaza fina, chips de raíz y crema ahumada.",
+          name: "Tartaro esmeralda",
+          description: "Res curada, mostaza fina, chips de raiz y crema ahumada.",
+          detail: "Corte fino de res con acentos terrosos y un final ahumado elegante. El montaje y la vajilla estan pensados para un servicio nocturno sofisticado.",
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
           price: "$24"
         }
       ]
@@ -35,13 +39,17 @@ const defaultContent = {
       categoryTitle: "Piezas centrales",
       items: [
         {
-          name: "Lomo verde aureo",
-          description: "Corte premium, puré de apio, espárragos y demi-glace con acabado dorado.",
+          name: "Lomo D'Lena",
+          description: "Corte premium, puree de apio, esparragos y demi-glace con acabado dorado.",
+          detail: "La pieza central de la casa. Coccion precisa, salsa de fondo profunda y acabado visual de alta gama con acento dorado y vegetales de textura limpia.",
+          image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
           price: "$46"
         },
         {
-          name: "Robalo de jardín",
-          description: "Filete sellado, mantequilla de hierbas, hinojo y emulsión de limón.",
+          name: "Robalo de jardin",
+          description: "Filete sellado, mantequilla de hierbas, hinojo y emulsion de limon.",
+          detail: "Preparacion luminosa con equilibrio entre mantequilla, notas anisadas y una acidez controlada para mantener una sensacion ligera y sofisticada.",
+          image: "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80",
           price: "$39"
         }
       ]
@@ -53,21 +61,25 @@ const defaultContent = {
         {
           name: "Opera de pistacho",
           description: "Capas ligeras, ganache suave y polvo dulce de nuez.",
+          detail: "Postre de estructura delicada con acabado fino, volumen controlado y un perfil de frutos secos disenado para cerrar la cena sin pesadez.",
+          image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=80",
           price: "$16"
         },
         {
-          name: "Perla cítrica",
-          description: "Mousse de vainilla, centro de maracuyá y espejo brillante.",
+          name: "Perla citrica",
+          description: "Mousse de vainilla, centro de maracuya y espejo brillante.",
+          detail: "Una composicion ligera y brillante con centro acido y textura sedosa. Presentacion limpia para un cierre mas fresco y contemporaneo.",
+          image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
           price: "$15"
         }
       ]
     }
   ],
-  aboutTitle: "Diseño sensorial con carácter premium",
-  aboutText: "El concepto combina acabados oscuros, dorados sobrios y una narrativa visual de alta gama. Todo el contenido de esta demo puede editarse desde el administrador: textos, imágenes y categorías completas del menú.",
+  aboutTitle: "Disenio sensorial con caracter premium",
+  aboutText: "El concepto combina acabados oscuros, dorados sobrios y una narrativa visual de alta gama. Todo el contenido de esta demo puede editarse desde el administrador: textos, imagenes y categorias completas del menu.",
   aboutImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80",
   hoursText: "Martes a domingo, 6:00 PM a 11:30 PM",
-  locationText: "Zona exclusiva, salón privado y terraza de firma",
+  locationText: "Zona exclusiva, salon privado y terraza de firma",
   reservationText: "reservas@dlena.demo | +502 5555 0101"
 };
 
@@ -83,11 +95,23 @@ function loadContent() {
     const parsed = JSON.parse(saved);
     return {
       ...structuredClone(defaultContent),
-      ...parsed
+      ...parsed,
+      menuItems: normalizeMenuItems(parsed.menuItems || defaultContent.menuItems)
     };
-  } catch (error) {
+  } catch {
     return structuredClone(defaultContent);
   }
+}
+
+function normalizeMenuItems(menuItems) {
+  return menuItems.map((category) => ({
+    ...category,
+    items: (category.items || []).map((item) => ({
+      detail: item.detail || item.description || "",
+      image: item.image || defaultContent.aboutImage,
+      ...item
+    }))
+  }));
 }
 
 function saveContent(content) {
@@ -96,22 +120,9 @@ function saveContent(content) {
 
 function renderContent() {
   const textFields = [
-    "heroEyebrow",
-    "heroTitle",
-    "heroText",
-    "heroNoteOne",
-    "heroNoteTwo",
-    "heroNoteThree",
-    "featuredDishName",
-    "featuredDishText",
-    "menuTitle",
-    "menuIntro",
-    "menuSummary",
-    "aboutTitle",
-    "aboutText",
-    "hoursText",
-    "locationText",
-    "reservationText"
+    "heroEyebrow", "heroTitle", "heroText", "heroNoteOne", "heroNoteTwo", "heroNoteThree",
+    "featuredDishName", "featuredDishText", "menuTitle", "menuIntro", "menuSummary",
+    "aboutTitle", "aboutText", "hoursText", "locationText", "reservationText"
   ];
 
   textFields.forEach((key) => {
@@ -141,6 +152,7 @@ function renderContent() {
       itemNode.querySelector(".item-name").textContent = item.name;
       itemNode.querySelector(".item-description").textContent = item.description;
       itemNode.querySelector(".item-price").textContent = item.price;
+      itemNode.addEventListener("click", () => openDishModal(category, item));
       itemsContainer.appendChild(itemNode);
     });
 
@@ -172,10 +184,26 @@ function closeAdmin() {
   document.getElementById("adminModal").setAttribute("aria-hidden", "true");
 }
 
+function openDishModal(category, dish) {
+  document.getElementById("dishModalCategory").textContent = category.categoryTitle;
+  document.getElementById("dishModalName").textContent = dish.name;
+  document.getElementById("dishModalPrice").textContent = dish.price;
+  document.getElementById("dishModalDescription").textContent = dish.description;
+  document.getElementById("dishModalDetail").textContent = dish.detail || dish.description;
+  document.getElementById("dishModalImage").style.backgroundImage = `linear-gradient(to bottom, rgba(4, 10, 7, 0.12), rgba(4, 10, 7, 0.5)), url("${dish.image || state.aboutImage}")`;
+  document.getElementById("dishModal").classList.add("open");
+  document.getElementById("dishModal").setAttribute("aria-hidden", "false");
+}
+
+function closeDishModal() {
+  document.getElementById("dishModal").classList.remove("open");
+  document.getElementById("dishModal").setAttribute("aria-hidden", "true");
+}
+
 function createEmptyCategory() {
   return {
-    categoryName: "Nueva categoría",
-    categoryTitle: "Título de categoría",
+    categoryName: "Nueva categoria",
+    categoryTitle: "Titulo de categoria",
     items: [createEmptyDish()]
   };
 }
@@ -183,7 +211,9 @@ function createEmptyCategory() {
 function createEmptyDish() {
   return {
     name: "Nuevo platillo",
-    description: "Describe aquí el platillo.",
+    description: "Describe aqui el platillo.",
+    detail: "Agrega aqui los detalles completos del platillo.",
+    image: state.aboutImage,
     price: "$0"
   };
 }
@@ -226,6 +256,8 @@ function renderAdminMenuEditor() {
       dishNode.querySelector(".admin-dish-name").value = dish.name;
       dishNode.querySelector(".admin-dish-price").value = dish.price;
       dishNode.querySelector(".admin-dish-description").value = dish.description;
+      dishNode.querySelector(".admin-dish-detail").value = dish.detail || "";
+      dishNode.querySelector(".admin-dish-image").value = dish.image || "";
 
       dishNode.querySelector(".admin-dish-name").addEventListener("input", (event) => {
         state.menuItems[categoryIndex].items[dishIndex].name = event.target.value;
@@ -242,6 +274,16 @@ function renderAdminMenuEditor() {
       dishNode.querySelector(".admin-dish-description").addEventListener("input", (event) => {
         state.menuItems[categoryIndex].items[dishIndex].description = event.target.value;
         renderContent();
+        saveContent(state);
+      });
+
+      dishNode.querySelector(".admin-dish-detail").addEventListener("input", (event) => {
+        state.menuItems[categoryIndex].items[dishIndex].detail = event.target.value;
+        saveContent(state);
+      });
+
+      dishNode.querySelector(".admin-dish-image").addEventListener("input", (event) => {
+        state.menuItems[categoryIndex].items[dishIndex].image = event.target.value;
         saveContent(state);
       });
 
@@ -349,7 +391,13 @@ function setupMobileMenu() {
   });
 }
 
+function setupDishModal() {
+  document.getElementById("closeDishModal").addEventListener("click", closeDishModal);
+  document.getElementById("closeDishModalButton").addEventListener("click", closeDishModal);
+}
+
 renderContent();
 setupAdmin();
 setupRevealAnimations();
 setupMobileMenu();
+setupDishModal();
